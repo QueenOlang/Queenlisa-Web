@@ -2,80 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
-    <link 
-    rel="stylesheet"
-    href="./style.css"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love letter 19.09.23</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-   
-    <div class="top">
-        <div class="nav">
-            <p>Home</p>
-            <p>About</p>
-            <p>Contact Us</p>
-            <p>Our Team</p>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong style="font-family: cursive; color: red;">My Love</strong>
+                        <p style="font-size: 4pt;">
+                            What I wouldn't give to spend all night awake with you again, filling the hours with unnecessary activities just to spend more time with each other. 
+                            To spend all day holding each other. I have never had a boring day with you. 
+                            I was just thinking about our midnight food runs and it has me so sad. I miss racing bikes with you and you cheating by always trying to be on the inside. 
+                            I miss being indecisive about what food to get at lawson's and ending up buying nonsense. I miss how you'd put your hand in my back pocket when we walk sometimes.
+                            I miss how we were convincing ourselves that we were being slick when we were acting like a full-blown couple everywhere. 
+                            I miss our coffee dates. I miss our playing pool dates. I miss going to Lugas and doing the most knowing we can't eat all that.
+                            I miss every moment we spent together and I wish I could relive it.
+                            <span style="color: red;">I LOVE YOU</span>  so, very, incredibly much.
+                        </p>
+                        <p style="text-align: center; font-family: cursive; color: red;"> Love, Leesa <span style="color: red;"><3</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
         </div>
-    
-        <h1>We Live B******es!</h1>
-
     </div>
-
-    <div class="mypicture">
-        <img src="./assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg">
-    
-    </div>
-   
-    <div class="bio">
-        <p style="font-size: large; font-weight: bold; color: cornflowerblue;"> Jane Doe</p>
-        <p>My name is Jane Doe. I do not know who Doe is, but allegedly, he is my dad. I also have a brother called John Doe. That one I'm aware of. Don't like him much.</p>
-    </div>
-
-    <svg class="editorial"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 24 150 28 "
-     preserveAspectRatio="none">
- <defs>
- <path id="gentle-wave"
- d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z" />
-  </defs>
-  <g class="parallax1">
-   <use xlink:href="#gentle-wave" x="50" y="3" fill="#fdad0d"/>
-  </g>
-    <g class="parallax2">
-   <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
-    </g>
-      <g class="parallax3">
-   <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
-   </g>
-    <g class="parallax4">
-   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
-  </g>
-</svg>
-
-<div class="Touch">
-    <p style="font-size: larger; font-weight: bold; color: cornflowerblue;"> Get in Touch</p>
-    <p style="font-size: large; ">Love hot wings as much as I do? Let's talk about how awesome they are! We can code while we eat hot wings!</p>
-</div>
-
-<div class="footers">
-   <div class="footer">
-    <p>LinkedIn</p>
-    <p>Instagram</p>
-    <p>X</p>
-   </div> 
-    <p class="copyright" style="font-family: 'Times New Roman', Times, serif; color: white; font-size: 10pt;"> © Queen Olan'g</p>
-</div>
-
-
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
 </body>
-
 </html>
